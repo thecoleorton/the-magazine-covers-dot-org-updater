@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *currentIssueNumberLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
+
 @end
