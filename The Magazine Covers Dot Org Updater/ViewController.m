@@ -7,6 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "AFNetworking/AFHTTPRequestOperationManager.h"
+
+#define URL @"http://0.0.0.0:3000/current_issue_numbers.json" // dev
+//#define URL @"http://0.0.0.0:3000/current_issue_numbers.json" // prod
+
+#define current_issue_number_key @"current_issue_number"
 
 @interface ViewController ()
 
@@ -18,6 +24,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:URL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        
+        if (responseObject) {
+            NSDictionary *responseObjectDict = (NSDictionary *)responseObject;
+            if ([responseObjectDict valueForKey:current_issue_number_key]) {
+                _currentIssueNumber = (NSNumber *)[responseObjectDict valueForKey:current_issue_number_key];
+                NSLog(@"_currentIssueNumber: %@", _currentIssueNumber);
+            }
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning
