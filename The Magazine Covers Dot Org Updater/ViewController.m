@@ -24,61 +24,32 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    NSURLRequest *request = [NSURLRequest requestWithURL:
-//                             [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", BASE_URL, CURRENT_ISSUE_NUMBER]]];
-//    
-//    [NSURLConnection sendAsynchronousRequest:request
-//                                       queue:[NSOperationQueue mainQueue]
-//                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//                               // handle response
-//                               NSLog(@"NSURLConnection - dataAsString: %@", [NSString stringWithUTF8String:[data bytes]]);
-//                               NSError *error1;
-//                               NSMutableDictionary *seralizedJson = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error1];
-//                               NSLog(@"NSURLConnection - seralizedJson: %@", seralizedJson);
-//                           }];
-//    
-//    NSURLSession *session = [NSURLSession sharedSession];
-//    [[session dataTaskWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@", BASE_URL, CURRENT_ISSUE_NUMBER]]
-//            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-//                // handle response
-//                NSLog(@"NSURLSession - dataAsString: %@", [NSString stringWithUTF8String:[data bytes]]);
-//                NSError *error1;
-//                NSMutableDictionary *seralizedJson = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error1];
-//                NSLog(@"NSURLSession - seralizedJson: %@", seralizedJson);
-//            }] resume];
-//    
-//    
-//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//    [manager GET:[NSString stringWithFormat:@"%@%@", BASE_URL, CURRENT_ISSUE_NUMBER] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        NSLog(@"AFHTTPRequestOperationManager - JSON: %@", responseObject);
-//        
-//        if (responseObject) {
-//            NSDictionary *responseObjectDict = (NSDictionary *)responseObject;
-//            if ([responseObjectDict valueForKey:current_issue_number_key]) {
-//                _currentIssueNumber = (NSNumber *)[responseObjectDict valueForKey:current_issue_number_key];
-//                
-//                NSLog(@"_currentIssueNumber: %@", _currentIssueNumber);
-//                
-//                if (_currentIssueNumber) {
-//                    [self updateCurrentIssueNumberLabel:_currentIssueNumber];
-//                }
-//                
-//            }
-//        }
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        NSLog(@"Error: %@", error);
-//    }];
-
     NSURLSessionDataTask *task = [[TMCClient sharedClient] getCurrentIssueNumber:CURRENT_ISSUE_NUMBER
-                                                                 completion:^(NSArray *results, NSError *error) {
-                                                                     if (results) {
-                                                                         NSLog(@"results: %@", results);
-                                                                     } else {
-                                                                         NSLog(@"ERROR: %@", error);
-                                                                     }
-                                                                 }];
-
+                                                                      completion:^(NSArray *results, NSError *error) {
+                                                                          if (results) {
+                                                                              NSLog(@"results: %@", results);
+                                                                              
+                                                                              
+                                                                              if (results) {
+                                                                                  NSDictionary *responseObjectDict = (NSDictionary *)results;
+                                                                                  if ([responseObjectDict valueForKey:current_issue_number_key]) {
+                                                                                      _currentIssueNumber = (NSNumber *)[responseObjectDict valueForKey:current_issue_number_key];
+                                                                                      
+                                                                                      NSLog(@"_currentIssueNumber: %@", _currentIssueNumber);
+                                                                                      
+                                                                                      if (_currentIssueNumber) {
+                                                                                          [self updateCurrentIssueNumberLabel:_currentIssueNumber];
+                                                                                      }
+                                                                                      
+                                                                                  }
+                                                                              }
+                                                                              
+                                                                              
+                                                                          } else {
+                                                                              NSLog(@"ERROR: %@", error);
+                                                                          }
+                                                                      }];
+    [task resume];
     
 }
 
