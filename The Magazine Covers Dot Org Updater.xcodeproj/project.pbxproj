@@ -1,1125 +1,540 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0C89FDE3BD784C688A0EFAE5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1DEEDDE1B2A5470694D33B5A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>22D98124CE244E2EA1818360</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>960893CD1822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893DF1822E78E0064CF27</string>
-				<string>960894011822E78E0064CF27</string>
-				<string>960893D81822E78E0064CF27</string>
-				<string>960893D71822E78E0064CF27</string>
-				<string>0C89FDE3BD784C688A0EFAE5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893CE1822E78E0064CF27</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Cole Orton</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>960893F91822E78E0064CF27</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>960893D51822E78E0064CF27</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>960893D11822E78E0064CF27</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>960893CD1822E78E0064CF27</string>
-			<key>productRefGroup</key>
-			<string>960893D71822E78E0064CF27</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>960893D51822E78E0064CF27</string>
-				<string>960893F91822E78E0064CF27</string>
-			</array>
-		</dict>
-		<key>960893D11822E78E0064CF27</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>960894091822E78E0064CF27</string>
-				<string>9608940A1822E78E0064CF27</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>960893D21822E78E0064CF27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>960893F31822E78E0064CF27</string>
-				<string>960893EA1822E78E0064CF27</string>
-				<string>960893E61822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>960893D31822E78E0064CF27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>960893DC1822E78E0064CF27</string>
-				<string>960893DE1822E78E0064CF27</string>
-				<string>960893DA1822E78E0064CF27</string>
-				<string>B57D8A7890D847E684639E7A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>960893D41822E78E0064CF27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>960893F01822E78E0064CF27</string>
-				<string>960893F51822E78E0064CF27</string>
-				<string>960893ED1822E78E0064CF27</string>
-				<string>960893E41822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>960893D51822E78E0064CF27</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9608940B1822E78E0064CF27</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1DEEDDE1B2A5470694D33B5A</string>
-				<string>960893D21822E78E0064CF27</string>
-				<string>960893D31822E78E0064CF27</string>
-				<string>960893D41822E78E0064CF27</string>
-				<string>DD0DC1966A664BBCBC6CB1F3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>The Magazine Covers Dot Org Updater</string>
-			<key>productName</key>
-			<string>The Magazine Covers Dot Org Updater</string>
-			<key>productReference</key>
-			<string>960893D61822E78E0064CF27</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>960893D61822E78E0064CF27</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>The Magazine Covers Dot Org Updater.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>960893D71822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893D61822E78E0064CF27</string>
-				<string>960893FA1822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893D81822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893D91822E78E0064CF27</string>
-				<string>960893DB1822E78E0064CF27</string>
-				<string>960893DD1822E78E0064CF27</string>
-				<string>960893FB1822E78E0064CF27</string>
-				<string>22D98124CE244E2EA1818360</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893D91822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>960893DA1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893D91822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893DB1822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>960893DC1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893DB1822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893DD1822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>960893DE1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893DD1822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893DF1822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893E81822E78E0064CF27</string>
-				<string>960893E91822E78E0064CF27</string>
-				<string>960893EB1822E78E0064CF27</string>
-				<string>960893EE1822E78E0064CF27</string>
-				<string>960893F11822E78E0064CF27</string>
-				<string>960893F21822E78E0064CF27</string>
-				<string>960893F41822E78E0064CF27</string>
-				<string>960893E01822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>The Magazine Covers Dot Org Updater</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E01822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893E11822E78E0064CF27</string>
-				<string>960893E21822E78E0064CF27</string>
-				<string>960893E51822E78E0064CF27</string>
-				<string>960893E71822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E11822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>The Magazine Covers Dot Org Updater-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E21822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893E31822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E31822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E41822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893E21822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893E51822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E61822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893E51822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893E71822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>The Magazine Covers Dot Org Updater-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E81822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893E91822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893EA1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893E91822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893EB1822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893EC1822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893EC1822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893ED1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893EB1822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893EE1822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960893EF1822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893EF1822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893F01822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893EE1822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893F11822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893F21822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893F31822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893F21822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893F41822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960893F51822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893F41822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893F61822E78E0064CF27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>960894081822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>960893F71822E78E0064CF27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>960893FC1822E78E0064CF27</string>
-				<string>960893FE1822E78E0064CF27</string>
-				<string>960893FD1822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>960893F81822E78E0064CF27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>960894061822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>960893F91822E78E0064CF27</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9608940E1822E78E0064CF27</string>
-			<key>buildPhases</key>
-			<array>
-				<string>960893F61822E78E0064CF27</string>
-				<string>960893F71822E78E0064CF27</string>
-				<string>960893F81822E78E0064CF27</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>960894001822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>The Magazine Covers Dot Org UpdaterTests</string>
-			<key>productName</key>
-			<string>The Magazine Covers Dot Org UpdaterTests</string>
-			<key>productReference</key>
-			<string>960893FA1822E78E0064CF27</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>960893FA1822E78E0064CF27</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>The Magazine Covers Dot Org UpdaterTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>960893FB1822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>960893FC1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893FB1822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893FD1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893D91822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893FE1822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960893DD1822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960893FF1822E78E0064CF27</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>960893CE1822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>960893D51822E78E0064CF27</string>
-			<key>remoteInfo</key>
-			<string>The Magazine Covers Dot Org Updater</string>
-		</dict>
-		<key>960894001822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>960893D51822E78E0064CF27</string>
-			<key>targetProxy</key>
-			<string>960893FF1822E78E0064CF27</string>
-		</dict>
-		<key>960894011822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960894071822E78E0064CF27</string>
-				<string>960894021822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>The Magazine Covers Dot Org UpdaterTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960894021822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960894031822E78E0064CF27</string>
-				<string>960894041822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960894031822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>The Magazine Covers Dot Org UpdaterTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960894041822E78E0064CF27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>960894051822E78E0064CF27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960894051822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960894061822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960894041822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960894071822E78E0064CF27</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>The_Magazine_Covers_Dot_Org_UpdaterTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>960894081822E78E0064CF27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>960894071822E78E0064CF27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>960894091822E78E0064CF27</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9608940A1822E78E0064CF27</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9608940B1822E78E0064CF27</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9608940C1822E78E0064CF27</string>
-				<string>9608940D1822E78E0064CF27</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9608940C1822E78E0064CF27</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0C89FDE3BD784C688A0EFAE5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9608940D1822E78E0064CF27</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0C89FDE3BD784C688A0EFAE5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9608940E1822E78E0064CF27</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9608940F1822E78E0064CF27</string>
-				<string>960894101822E78E0064CF27</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9608940F1822E78E0064CF27</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/The Magazine Covers Dot Org Updater.app/The Magazine Covers Dot Org Updater</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>The Magazine Covers Dot Org UpdaterTests/The Magazine Covers Dot Org UpdaterTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>960894101822E78E0064CF27</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/The Magazine Covers Dot Org Updater.app/The Magazine Covers Dot Org Updater</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>The Magazine Covers Dot Org UpdaterTests/The Magazine Covers Dot Org UpdaterTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B57D8A7890D847E684639E7A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>22D98124CE244E2EA1818360</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DD0DC1966A664BBCBC6CB1F3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>960893CE1822E78E0064CF27</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960893DA1822E78E0064CF27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893D91822E78E0064CF27 /* Foundation.framework */; };
+		960893DC1822E78E0064CF27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893DB1822E78E0064CF27 /* CoreGraphics.framework */; };
+		960893DE1822E78E0064CF27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893DD1822E78E0064CF27 /* UIKit.framework */; };
+		960893E41822E78E0064CF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960893E21822E78E0064CF27 /* InfoPlist.strings */; };
+		960893E61822E78E0064CF27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 960893E51822E78E0064CF27 /* main.m */; };
+		960893EA1822E78E0064CF27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960893E91822E78E0064CF27 /* AppDelegate.m */; };
+		960893ED1822E78E0064CF27 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960893EB1822E78E0064CF27 /* Main_iPhone.storyboard */; };
+		960893F01822E78E0064CF27 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960893EE1822E78E0064CF27 /* Main_iPad.storyboard */; };
+		960893F31822E78E0064CF27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960893F21822E78E0064CF27 /* ViewController.m */; };
+		960893F51822E78E0064CF27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960893F41822E78E0064CF27 /* Images.xcassets */; };
+		960893FC1822E78E0064CF27 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893FB1822E78E0064CF27 /* XCTest.framework */; };
+		960893FD1822E78E0064CF27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893D91822E78E0064CF27 /* Foundation.framework */; };
+		960893FE1822E78E0064CF27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893DD1822E78E0064CF27 /* UIKit.framework */; };
+		960894061822E78E0064CF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960894041822E78E0064CF27 /* InfoPlist.strings */; };
+		960894081822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */; };
+		960F782C1824069F002758CE /* TMCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F782B1824069F002758CE /* TMCClient.m */; };
+		B57D8A7890D847E684639E7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D98124CE244E2EA1818360 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		960893FF1822E78E0064CF27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960893CE1822E78E0064CF27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960893D51822E78E0064CF27;
+			remoteInfo = "The Magazine Covers Dot Org Updater";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		22D98124CE244E2EA1818360 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		960893D61822E78E0064CF27 /* The Magazine Covers Dot Org Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Magazine Covers Dot Org Updater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960893D91822E78E0064CF27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		960893DB1822E78E0064CF27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		960893DD1822E78E0064CF27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		960893E11822E78E0064CF27 /* The Magazine Covers Dot Org Updater-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Magazine Covers Dot Org Updater-Info.plist"; sourceTree = "<group>"; };
+		960893E31822E78E0064CF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		960893E51822E78E0064CF27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		960893E71822E78E0064CF27 /* The Magazine Covers Dot Org Updater-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Magazine Covers Dot Org Updater-Prefix.pch"; sourceTree = "<group>"; };
+		960893E81822E78E0064CF27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		960893E91822E78E0064CF27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		960893EC1822E78E0064CF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		960893EF1822E78E0064CF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		960893F11822E78E0064CF27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		960893F21822E78E0064CF27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		960893F41822E78E0064CF27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		960893FA1822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Magazine Covers Dot Org UpdaterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960893FB1822E78E0064CF27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		960894031822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Magazine Covers Dot Org UpdaterTests-Info.plist"; sourceTree = "<group>"; };
+		960894051822E78E0064CF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Magazine_Covers_Dot_Org_UpdaterTests.m; sourceTree = "<group>"; };
+		960F782A1824069F002758CE /* TMCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCClient.h; sourceTree = "<group>"; };
+		960F782B1824069F002758CE /* TMCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960893D31822E78E0064CF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960893DC1822E78E0064CF27 /* CoreGraphics.framework in Frameworks */,
+				960893DE1822E78E0064CF27 /* UIKit.framework in Frameworks */,
+				960893DA1822E78E0064CF27 /* Foundation.framework in Frameworks */,
+				B57D8A7890D847E684639E7A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960893F71822E78E0064CF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960893FC1822E78E0064CF27 /* XCTest.framework in Frameworks */,
+				960893FE1822E78E0064CF27 /* UIKit.framework in Frameworks */,
+				960893FD1822E78E0064CF27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960893CD1822E78E0064CF27 = {
+			isa = PBXGroup;
+			children = (
+				960893DF1822E78E0064CF27 /* The Magazine Covers Dot Org Updater */,
+				960894011822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests */,
+				960893D81822E78E0064CF27 /* Frameworks */,
+				960893D71822E78E0064CF27 /* Products */,
+				0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		960893D71822E78E0064CF27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960893D61822E78E0064CF27 /* The Magazine Covers Dot Org Updater.app */,
+				960893FA1822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		960893D81822E78E0064CF27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				960893D91822E78E0064CF27 /* Foundation.framework */,
+				960893DB1822E78E0064CF27 /* CoreGraphics.framework */,
+				960893DD1822E78E0064CF27 /* UIKit.framework */,
+				960893FB1822E78E0064CF27 /* XCTest.framework */,
+				22D98124CE244E2EA1818360 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		960893DF1822E78E0064CF27 /* The Magazine Covers Dot Org Updater */ = {
+			isa = PBXGroup;
+			children = (
+				960893E81822E78E0064CF27 /* AppDelegate.h */,
+				960893E91822E78E0064CF27 /* AppDelegate.m */,
+				960893EB1822E78E0064CF27 /* Main_iPhone.storyboard */,
+				960893EE1822E78E0064CF27 /* Main_iPad.storyboard */,
+				960F782A1824069F002758CE /* TMCClient.h */,
+				960F782B1824069F002758CE /* TMCClient.m */,
+				960893F11822E78E0064CF27 /* ViewController.h */,
+				960893F21822E78E0064CF27 /* ViewController.m */,
+				960893F41822E78E0064CF27 /* Images.xcassets */,
+				960893E01822E78E0064CF27 /* Supporting Files */,
+			);
+			path = "The Magazine Covers Dot Org Updater";
+			sourceTree = "<group>";
+		};
+		960893E01822E78E0064CF27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				960893E11822E78E0064CF27 /* The Magazine Covers Dot Org Updater-Info.plist */,
+				960893E21822E78E0064CF27 /* InfoPlist.strings */,
+				960893E51822E78E0064CF27 /* main.m */,
+				960893E71822E78E0064CF27 /* The Magazine Covers Dot Org Updater-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		960894011822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */,
+				960894021822E78E0064CF27 /* Supporting Files */,
+			);
+			path = "The Magazine Covers Dot Org UpdaterTests";
+			sourceTree = "<group>";
+		};
+		960894021822E78E0064CF27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				960894031822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests-Info.plist */,
+				960894041822E78E0064CF27 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960893D51822E78E0064CF27 /* The Magazine Covers Dot Org Updater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9608940B1822E78E0064CF27 /* Build configuration list for PBXNativeTarget "The Magazine Covers Dot Org Updater" */;
+			buildPhases = (
+				1DEEDDE1B2A5470694D33B5A /* Check Pods Manifest.lock */,
+				960893D21822E78E0064CF27 /* Sources */,
+				960893D31822E78E0064CF27 /* Frameworks */,
+				960893D41822E78E0064CF27 /* Resources */,
+				DD0DC1966A664BBCBC6CB1F3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Magazine Covers Dot Org Updater";
+			productName = "The Magazine Covers Dot Org Updater";
+			productReference = 960893D61822E78E0064CF27 /* The Magazine Covers Dot Org Updater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		960893F91822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9608940E1822E78E0064CF27 /* Build configuration list for PBXNativeTarget "The Magazine Covers Dot Org UpdaterTests" */;
+			buildPhases = (
+				960893F61822E78E0064CF27 /* Sources */,
+				960893F71822E78E0064CF27 /* Frameworks */,
+				960893F81822E78E0064CF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960894001822E78E0064CF27 /* PBXTargetDependency */,
+			);
+			name = "The Magazine Covers Dot Org UpdaterTests";
+			productName = "The Magazine Covers Dot Org UpdaterTests";
+			productReference = 960893FA1822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		960893CE1822E78E0064CF27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Cole Orton";
+				TargetAttributes = {
+					960893F91822E78E0064CF27 = {
+						TestTargetID = 960893D51822E78E0064CF27;
+					};
+				};
+			};
+			buildConfigurationList = 960893D11822E78E0064CF27 /* Build configuration list for PBXProject "The Magazine Covers Dot Org Updater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 960893CD1822E78E0064CF27;
+			productRefGroup = 960893D71822E78E0064CF27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				960893D51822E78E0064CF27 /* The Magazine Covers Dot Org Updater */,
+				960893F91822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		960893D41822E78E0064CF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960893F01822E78E0064CF27 /* Main_iPad.storyboard in Resources */,
+				960893F51822E78E0064CF27 /* Images.xcassets in Resources */,
+				960893ED1822E78E0064CF27 /* Main_iPhone.storyboard in Resources */,
+				960893E41822E78E0064CF27 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960893F81822E78E0064CF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960894061822E78E0064CF27 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DEEDDE1B2A5470694D33B5A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0DC1966A664BBCBC6CB1F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960893D21822E78E0064CF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960893F31822E78E0064CF27 /* ViewController.m in Sources */,
+				960F782C1824069F002758CE /* TMCClient.m in Sources */,
+				960893EA1822E78E0064CF27 /* AppDelegate.m in Sources */,
+				960893E61822E78E0064CF27 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960893F61822E78E0064CF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960894081822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		960894001822E78E0064CF27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960893D51822E78E0064CF27 /* The Magazine Covers Dot Org Updater */;
+			targetProxy = 960893FF1822E78E0064CF27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		960893E21822E78E0064CF27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960893E31822E78E0064CF27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		960893EB1822E78E0064CF27 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960893EC1822E78E0064CF27 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		960893EE1822E78E0064CF27 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960893EF1822E78E0064CF27 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		960894041822E78E0064CF27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960894051822E78E0064CF27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		960894091822E78E0064CF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9608940A1822E78E0064CF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9608940C1822E78E0064CF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
+				INFOPLIST_FILE = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9608940D1822E78E0064CF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
+				INFOPLIST_FILE = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9608940F1822E78E0064CF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The Magazine Covers Dot Org Updater.app/The Magazine Covers Dot Org Updater";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "The Magazine Covers Dot Org UpdaterTests/The Magazine Covers Dot Org UpdaterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		960894101822E78E0064CF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The Magazine Covers Dot Org Updater.app/The Magazine Covers Dot Org Updater";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
+				INFOPLIST_FILE = "The Magazine Covers Dot Org UpdaterTests/The Magazine Covers Dot Org UpdaterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		960893D11822E78E0064CF27 /* Build configuration list for PBXProject "The Magazine Covers Dot Org Updater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960894091822E78E0064CF27 /* Debug */,
+				9608940A1822E78E0064CF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9608940B1822E78E0064CF27 /* Build configuration list for PBXNativeTarget "The Magazine Covers Dot Org Updater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9608940C1822E78E0064CF27 /* Debug */,
+				9608940D1822E78E0064CF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9608940E1822E78E0064CF27 /* Build configuration list for PBXNativeTarget "The Magazine Covers Dot Org UpdaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9608940F1822E78E0064CF27 /* Debug */,
+				960894101822E78E0064CF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 960893CE1822E78E0064CF27 /* Project object */;
+}
