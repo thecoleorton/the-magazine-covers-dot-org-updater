@@ -28,8 +28,7 @@
                                                                       completion:^(NSArray *results, NSError *error) {
                                                                           if (results) {
                                                                               NSLog(@"results: %@", results);
-                                                                              
-                                                                              
+
                                                                               if (results) {
                                                                                   NSDictionary *responseObjectDict = (NSDictionary *)results;
                                                                                   if ([responseObjectDict valueForKey:current_issue_number_key]) {

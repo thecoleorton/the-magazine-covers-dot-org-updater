@@ -10,7 +10,9 @@
 #import "TMCClient.h"
 
 #define BASE_URL @"http://0.0.0.0:3000/" // dev
-#define CURRENT_ISSUE_NUMBER @"current_issue_numbers.json"
+//#define BASE_URL @"http://0.0.0.0:3000/" // prod
+
+#define CURRENT_ISSUE_NUMBER @"current_issue_numbers/1.json"
 
 @implementation TMCClient
 
@@ -41,10 +43,14 @@
     NSURLSessionDataTask *task = [self GET:issueNumber
                                 parameters:nil
                                    success:^(NSURLSessionDataTask *task, id responseObject) {
+                                       
+                                       NSString *current_issue_number = responseObject[0][@"current_issue_number"];
+                                       NSLog(@"current_issue_number: %@", current_issue_number);
+                                       
                                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)task.response;
                                        if (httpResponse.statusCode == 200) {
                                            dispatch_async(dispatch_get_main_queue(), ^{
-                                               completion(responseObject, nil);
+                                               completion(responseObject[0], nil);
                                            });
                                        } else {
                                            dispatch_async(dispatch_get_main_queue(), ^{
