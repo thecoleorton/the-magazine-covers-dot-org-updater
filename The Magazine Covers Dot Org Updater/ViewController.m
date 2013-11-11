@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TMCClient.h"
 #import "AFNetworking.h"
 
 @interface ViewController ()
@@ -18,21 +17,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+
     [self getCurrentIssueNumber];
     
 }
 
 - (void)getCurrentIssueNumber
 {
-    // Do any additional setup after loading the view, typically from a nib.
-    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://localhost:3000/api/current_issue_number" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager GET:[NSString stringWithFormat:@"%@%@", BASE_URL, CURRENT_ISSUE_NUMBER_PATH] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject[0]);
         
         if (responseObject) {
-            _currentIssueMongoId = [responseObject[0] valueForKey:@"_id"];
-            _currentIssueNumber = [responseObject[0] valueForKey:@"issue"];
+            _currentIssueMongoId = [responseObject[0] valueForKey:CURRENT_ISSUE_MONGO_ID_KEY];
+            _currentIssueNumber = [responseObject[0] valueForKey:CURRENT_ISSUE_NUMBER_KEY];
             
             if (_currentIssueNumber) {
                 [self updateCurrentIssueNumberLabel:_currentIssueNumber];
