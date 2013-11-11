@@ -14,7 +14,9 @@
 @property (nonatomic, retain) NSString *currentIssueMongoId;
 @property (nonatomic, retain) NSString *currentIssueNumber;
 
-- (IBAction)addNewCoverAction:(id)sender;
-- (void)updateCurrentIssueNumber:(NSString *)currentIssueMongoId;
+- (void)updateCurrentIssueNumber:(NSString *)currentIssueMongoId toAddCover:(BOOL)addCover;
+
+- (IBAction)addCoverAction:(id)sender;
+- (IBAction)removeCoverAction:(id)sender;
 
 @end

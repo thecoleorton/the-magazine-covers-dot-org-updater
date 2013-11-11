@@ -52,12 +52,16 @@
     }];
 }
 
-- (void)updateCurrentIssueNumber:(NSString *)currentIssueMongoId
+- (void)updateCurrentIssueNumber:(NSString *)currentIssueMongoId toAddCover:(BOOL)addCover
 {
     NSLog(@"BEFORE - updateCurrentIssueNumber() - currentIssueMongoId: %@, self.currentIssueNumber: %@", currentIssueMongoId, self.currentIssueNumber);
     
-    self.currentIssueNumber = [[[NSDecimalNumber decimalNumberWithString:self.currentIssueNumber] decimalNumberByAdding:[NSDecimalNumber decimalNumberWithString:@"1"]] stringValue];
-    
+    if (addCover == YES) {
+        self.currentIssueNumber = [[[NSDecimalNumber decimalNumberWithString:self.currentIssueNumber] decimalNumberByAdding:[NSDecimalNumber decimalNumberWithString:@"1"]] stringValue];
+    } else {
+        self.currentIssueNumber = [[[NSDecimalNumber decimalNumberWithString:self.currentIssueNumber] decimalNumberBySubtracting:[NSDecimalNumber decimalNumberWithString:@"1"]] stringValue];
+    }
+
     NSLog(@"AFTER - updateCurrentIssueNumber() - currentIssueMongoId: %@, self.currentIssueNumber: %@", currentIssueMongoId, self.currentIssueNumber);
 
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -77,8 +81,14 @@
     self.currentIssueNumberLabel.text = [NSString stringWithFormat:@"Current Issue Number: %@", currentIssueNumber];
 }
 
-- (IBAction)addNewCoverAction:(id)sender {
-    NSLog(@"addNewCoverAction() - self.currentIssueMongoId: %@", self.currentIssueMongoId);
-    [self updateCurrentIssueNumber:self.currentIssueMongoId];
+- (IBAction)addCoverAction:(id)sender {
+    NSLog(@"addCoverAction() - self.currentIssueMongoId: %@", self.currentIssueMongoId);
+    [self updateCurrentIssueNumber:self.currentIssueMongoId toAddCover:YES];
 }
+
+- (IBAction)removeCoverAction:(id)sender {
+    NSLog(@"removeCoverAction() - self.currentIssueMongoId: %@", self.currentIssueMongoId);
+    [self updateCurrentIssueNumber:self.currentIssueMongoId toAddCover:NO];
+}
+
 @end

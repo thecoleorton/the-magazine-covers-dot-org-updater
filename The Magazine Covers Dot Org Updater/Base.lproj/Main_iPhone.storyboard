@@ -24,13 +24,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daL-QB-H0z">
-                                <rect key="frame" x="20" y="318" width="280" height="30"/>
+                                <rect key="frame" x="20" y="280" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add new cover">
+                                <state key="normal" title="Add cover">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addNewCoverAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ajX-fq-qAu"/>
+                                    <action selector="addCoverAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0z9-RV-KEp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVS-pm-bdR">
+                                <rect key="frame" x="20" y="360" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Remove cover">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeCoverAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Vt-Nj-HAa"/>
                                 </connections>
                             </button>
                         </subviews>
