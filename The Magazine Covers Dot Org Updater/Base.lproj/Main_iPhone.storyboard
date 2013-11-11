@@ -34,13 +34,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVS-pm-bdR">
-                                <rect key="frame" x="20" y="360" width="280" height="30"/>
+                                <rect key="frame" x="20" y="403" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Remove cover">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="removeCoverAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Vt-Nj-HAa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntr-Hx-WdH">
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="the-magazine-covers.org">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u43-mF-GCd" kind="modal" id="WwA-wS-z4L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +63,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="297"/>
+            <point key="canvasLocation" x="617" y="27"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="WWO-co-jHe">
+            <objects>
+                <viewController restorationIdentifier="WebViewControllerRID" storyboardIdentifier="WebViewControllerSBID" id="x6c-sZ-SqX" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f3R-8Z-BWT"/>
+                        <viewControllerLayoutGuide type="bottom" id="BdJ-UI-gIE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j0g-Jc-iVd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aw2-ar-kCj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EQO-PA-7Cb"/>
+                    <connections>
+                        <outlet property="webView" destination="aw2-ar-kCj" id="RHv-Gx-dJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHI-zn-VY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fyc-Xc-GyD">
@@ -71,7 +110,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elu-zt-B8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461" y="297"/>
+            <point key="canvasLocation" x="91" y="27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ghf-q4-B6l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u43-mF-GCd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M82-cr-TIc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x6c-sZ-SqX" kind="relationship" relationship="rootViewController" id="FbP-W4-9DL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yR0-PH-4Jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="135"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
