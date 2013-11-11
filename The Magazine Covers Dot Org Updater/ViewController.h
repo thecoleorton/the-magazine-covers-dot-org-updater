@@ -11,8 +11,10 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *currentIssueNumberLabel;
-@property (weak, nonatomic) IBOutlet UIStepper *stepper;
-@property (nonatomic, assign) NSNumber *currentIssueNumber;
-@property (nonatomic, assign) NSNumber *currentIssueMongoId;
+@property (nonatomic, retain) NSString *currentIssueMongoId;
+@property (nonatomic, retain) NSString *currentIssueNumber;
+
+- (IBAction)addNewCoverAction:(id)sender;
+- (void)updateCurrentIssueNumber:(NSString *)currentIssueMongoId;
 
 @end
