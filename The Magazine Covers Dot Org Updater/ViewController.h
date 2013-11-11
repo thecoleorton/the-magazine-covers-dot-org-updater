@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *currentIssueNumberLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *stepper;
 @property (nonatomic, assign) NSNumber *currentIssueNumber;
+@property (nonatomic, assign) NSNumber *currentIssueMongoId;
 
 @end

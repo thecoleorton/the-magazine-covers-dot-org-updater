@@ -61,6 +61,7 @@
 		960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Magazine_Covers_Dot_Org_UpdaterTests.m; sourceTree = "<group>"; };
 		960F782A1824069F002758CE /* TMCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCClient.h; sourceTree = "<group>"; };
 		960F782B1824069F002758CE /* TMCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCClient.m; sourceTree = "<group>"; };
+		96AC64A4182C732400EF1620 /* Endpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endpoints.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 		960893DF1822E78E0064CF27 /* The Magazine Covers Dot Org Updater */ = {
 			isa = PBXGroup;
 			children = (
+				96AC64A4182C732400EF1620 /* Endpoints.h */,
 				960893E81822E78E0064CF27 /* AppDelegate.h */,
 				960893E91822E78E0064CF27 /* AppDelegate.m */,
 				960893EB1822E78E0064CF27 /* Main_iPhone.storyboard */,

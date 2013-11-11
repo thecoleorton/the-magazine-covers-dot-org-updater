@@ -9,11 +9,6 @@
 #import "AFNetworking.h"
 #import "TMCClient.h"
 
-#define BASE_URL @"http://0.0.0.0:3000/" // dev
-//#define BASE_URL @"http://0.0.0.0:3000/" // prod
-
-#define CURRENT_ISSUE_NUMBER @"current_issue_numbers/1.json"
-
 @implementation TMCClient
 
 + (TMCClient *)sharedClient {
@@ -44,13 +39,13 @@
                                 parameters:nil
                                    success:^(NSURLSessionDataTask *task, id responseObject) {
                                        
-                                       NSString *current_issue_number = responseObject[0][@"current_issue_number"];
+                                       NSString *current_issue_number = responseObject[@"current_issue_number"];
                                        NSLog(@"current_issue_number: %@", current_issue_number);
                                        
                                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)task.response;
                                        if (httpResponse.statusCode == 200) {
                                            dispatch_async(dispatch_get_main_queue(), ^{
-                                               completion(responseObject[0], nil);
+                                               completion(responseObject, nil);
                                            });
                                        } else {
                                            dispatch_async(dispatch_get_main_queue(), ^{
