@@ -22,6 +22,9 @@
 		960893FE1822E78E0064CF27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893DD1822E78E0064CF27 /* UIKit.framework */; };
 		960894061822E78E0064CF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960894041822E78E0064CF27 /* InfoPlist.strings */; };
 		960894081822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */; };
+		960F782C1824069F002758CE /* TMCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F782B1824069F002758CE /* TMCClient.m */; };
+		96BA12A11831A3B700DB90B3 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BA12A01831A3B700DB90B3 /* WebViewController.m */; };
+		B57D8A7890D847E684639E7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D98124CE244E2EA1818360 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		22D98124CE244E2EA1818360 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		960893D61822E78E0064CF27 /* The Magazine Covers Dot Org Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Magazine Covers Dot Org Updater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960893D91822E78E0064CF27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		960893DB1822E78E0064CF27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +60,11 @@
 		960894031822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Magazine Covers Dot Org UpdaterTests-Info.plist"; sourceTree = "<group>"; };
 		960894051822E78E0064CF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Magazine_Covers_Dot_Org_UpdaterTests.m; sourceTree = "<group>"; };
+		960F782A1824069F002758CE /* TMCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCClient.h; sourceTree = "<group>"; };
+		960F782B1824069F002758CE /* TMCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCClient.m; sourceTree = "<group>"; };
+		96AC64A4182C732400EF1620 /* Endpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endpoints.h; sourceTree = "<group>"; };
+		96BA129F1831A3B700DB90B3 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		96BA12A01831A3B700DB90B3 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 				960893DC1822E78E0064CF27 /* CoreGraphics.framework in Frameworks */,
 				960893DE1822E78E0064CF27 /* UIKit.framework in Frameworks */,
 				960893DA1822E78E0064CF27 /* Foundation.framework in Frameworks */,
+				B57D8A7890D847E684639E7A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,7 @@
 				960894011822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests */,
 				960893D81822E78E0064CF27 /* Frameworks */,
 				960893D71822E78E0064CF27 /* Products */,
+				0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +119,7 @@
 				960893DB1822E78E0064CF27 /* CoreGraphics.framework */,
 				960893DD1822E78E0064CF27 /* UIKit.framework */,
 				960893FB1822E78E0064CF27 /* XCTest.framework */,
+				22D98124CE244E2EA1818360 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,12 +127,17 @@
 		960893DF1822E78E0064CF27 /* The Magazine Covers Dot Org Updater */ = {
 			isa = PBXGroup;
 			children = (
+				96AC64A4182C732400EF1620 /* Endpoints.h */,
 				960893E81822E78E0064CF27 /* AppDelegate.h */,
 				960893E91822E78E0064CF27 /* AppDelegate.m */,
 				960893EB1822E78E0064CF27 /* Main_iPhone.storyboard */,
 				960893EE1822E78E0064CF27 /* Main_iPad.storyboard */,
+				960F782A1824069F002758CE /* TMCClient.h */,
+				960F782B1824069F002758CE /* TMCClient.m */,
 				960893F11822E78E0064CF27 /* ViewController.h */,
 				960893F21822E78E0064CF27 /* ViewController.m */,
+				96BA129F1831A3B700DB90B3 /* WebViewController.h */,
+				96BA12A01831A3B700DB90B3 /* WebViewController.m */,
 				960893F41822E78E0064CF27 /* Images.xcassets */,
 				960893E01822E78E0064CF27 /* Supporting Files */,
 			);
@@ -162,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9608940B1822E78E0064CF27 /* Build configuration list for PBXNativeTarget "The Magazine Covers Dot Org Updater" */;
 			buildPhases = (
+				1DEEDDE1B2A5470694D33B5A /* Check Pods Manifest.lock */,
 				960893D21822E78E0064CF27 /* Sources */,
 				960893D31822E78E0064CF27 /* Frameworks */,
 				960893D41822E78E0064CF27 /* Resources */,
+				DD0DC1966A664BBCBC6CB1F3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,12 +268,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DEEDDE1B2A5470694D33B5A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0DC1966A664BBCBC6CB1F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		960893D21822E78E0064CF27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				960893F31822E78E0064CF27 /* ViewController.m in Sources */,
+				96BA12A11831A3B700DB90B3 /* WebViewController.m in Sources */,
+				960F782C1824069F002758CE /* TMCClient.m in Sources */,
 				960893EA1822E78E0064CF27 /* AppDelegate.m in Sources */,
 				960893E61822E78E0064CF27 /* main.m in Sources */,
 			);
@@ -389,6 +444,7 @@
 		};
 		9608940C1822E78E0064CF27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +458,7 @@
 		};
 		9608940D1822E78E0064CF27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C89FDE3BD784C688A0EFAE5 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -474,6 +531,7 @@
 				9608940D1822E78E0064CF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9608940E1822E78E0064CF27 /* Build configuration list for PBXNativeTarget "The Magazine Covers Dot Org UpdaterTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +540,7 @@
 				960894101822E78E0064CF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
