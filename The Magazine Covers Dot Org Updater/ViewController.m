@@ -66,7 +66,7 @@
 
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSDictionary *parameters = @{ @"issue" : self.currentIssueNumber};
-    [manager PUT:[NSString stringWithFormat:@"http://localhost:3000/api/current_issue_number/%@", currentIssueMongoId] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager PUT:[NSString stringWithFormat:@"%@%@/%@", BASE_URL, CURRENT_ISSUE_NUMBER_PATH, currentIssueMongoId] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
         
         [self getCurrentIssueNumber];
