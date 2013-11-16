@@ -33,11 +33,12 @@
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:[NSString stringWithFormat:@"%@%@", BASE_URL, CURRENT_ISSUE_NUMBER_PATH] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject[0]);
+        NSLog(@"JSON: %@", responseObject);
+        NSArray *results = [responseObject valueForKey:@"results"];
         
-        if (responseObject) {
-            self.currentIssueMongoId = [responseObject[0] valueForKey:CURRENT_ISSUE_MONGO_ID_KEY];
-            self.currentIssueNumber = [responseObject[0] valueForKey:CURRENT_ISSUE_NUMBER_KEY];
+        if (results) {
+            self.currentIssueMongoId = [[results objectAtIndex:0] valueForKey:CURRENT_ISSUE_MONGO_ID_KEY];
+            self.currentIssueNumber = [[results objectAtIndex:0] valueForKey:CURRENT_ISSUE_NUMBER_KEY];
             
             NSLog(@"self.currentIssueMongoId: %@, self.currentIssueNumber: %@", self.currentIssueMongoId, self.currentIssueNumber);
             
