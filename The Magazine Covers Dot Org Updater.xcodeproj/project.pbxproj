@@ -444,6 +444,7 @@
 				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
 				INFOPLIST_FILE = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -458,6 +459,7 @@
 				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
 				INFOPLIST_FILE = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
