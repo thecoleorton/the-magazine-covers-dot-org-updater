@@ -14,8 +14,15 @@
 {
     // Override point for customization after application launch.
     
-    [Parse setApplicationId:@"hKvmhFzQEwFjRUFC4HlIsKpjKBEmrjZx9Z06AuNV"
-                  clientKey:@"Z8oOBbe2sdfL0LVeXIFVIsFmtsYxE1twDKXRnuJi"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"AppConfig" ofType:@"plist"];
+    NSDictionary *appConfigDict = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    NSString *parse_application_key = [appConfigDict valueForKey:@"parse_application_key"];
+    NSString *parse_client_key =  [appConfigDict valueForKey:@"parse_client_key"];
+    
+    NSLog(@"parse_application_key: %@, parse_client_key: %@", parse_application_key, parse_client_key);
+    
+    [Parse setApplicationId:parse_application_key
+                  clientKey:parse_client_key];
 
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
