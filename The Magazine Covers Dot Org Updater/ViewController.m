@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "AFNetworking.h"
 
+#define PF_CLASS_NAME @"Issue"
+#define CURRENT_ISSUE_OBJECT_KEY @"SX1LtTFPZ2"
+#define CURRENT_ISSUE_NUMBER_KEY @"current_number"
+
 @interface ViewController ()
 @end
 
@@ -24,69 +28,76 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
     [self getCurrentIssueNumber];
     
 }
 
 - (void)getCurrentIssueNumber
 {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:[NSString stringWithFormat:@"%@%@", BASE_URL, CURRENT_ISSUE_NUMBER_PATH] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject[0]);
+    _query = [PFQuery queryWithClassName:PF_CLASS_NAME];
+    [_query getObjectInBackgroundWithId:CURRENT_ISSUE_OBJECT_KEY block:^(PFObject *issue, NSError *error) {
+        NSLog(@"issue: %@", issue);
         
-        if (responseObject) {
-            self.currentIssueMongoId = [responseObject[0] valueForKey:CURRENT_ISSUE_MONGO_ID_KEY];
-            self.currentIssueNumber = [responseObject[0] valueForKey:CURRENT_ISSUE_NUMBER_KEY];
-            
-            NSLog(@"self.currentIssueMongoId: %@, self.currentIssueNumber: %@", self.currentIssueMongoId, self.currentIssueNumber);
-            
-            if (self.currentIssueNumber) {
+        if (issue) {
+            if ([issue valueForKey:CURRENT_ISSUE_NUMBER_KEY]) {
+                _currentIssueNumber = [issue valueForKey:CURRENT_ISSUE_NUMBER_KEY];
+                NSLog(@"_currentIssueNumber: %@", _currentIssueNumber);
                 [self updateCurrentIssueNumberLabel:self.currentIssueNumber];
             }
-            
         }
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
     }];
+    
 }
 
 - (void)updateCurrentIssueNumber:(NSString *)currentIssueMongoId toAddCover:(BOOL)addCover
 {
+    
     NSLog(@"BEFORE - updateCurrentIssueNumber() - currentIssueMongoId: %@, self.currentIssueNumber: %@", currentIssueMongoId, self.currentIssueNumber);
     
     if (addCover == YES) {
-        self.currentIssueNumber = [[[NSDecimalNumber decimalNumberWithString:self.currentIssueNumber] decimalNumberByAdding:[NSDecimalNumber decimalNumberWithString:@"1"]] stringValue];
+        self.currentIssueNumber = [[NSDecimalNumber decimalNumberWithString:[self.currentIssueNumber stringValue]] decimalNumberByAdding:[NSDecimalNumber decimalNumberWithString:@"1"]];
     } else {
-        self.currentIssueNumber = [[[NSDecimalNumber decimalNumberWithString:self.currentIssueNumber] decimalNumberBySubtracting:[NSDecimalNumber decimalNumberWithString:@"1"]] stringValue];
+        self.currentIssueNumber = [[NSDecimalNumber decimalNumberWithString:[self.currentIssueNumber stringValue]] decimalNumberBySubtracting:[NSDecimalNumber decimalNumberWithString:@"1"]];
     }
-
+    
     NSLog(@"AFTER - updateCurrentIssueNumber() - currentIssueMongoId: %@, self.currentIssueNumber: %@", currentIssueMongoId, self.currentIssueNumber);
-
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSDictionary *parameters = @{ @"issue" : self.currentIssueNumber};
-    [manager PUT:[NSString stringWithFormat:@"%@%@/%@", BASE_URL, CURRENT_ISSUE_NUMBER_PATH, currentIssueMongoId] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+    
+    // Retrieve the object by id
+    [_query getObjectInBackgroundWithId:CURRENT_ISSUE_OBJECT_KEY block:^(PFObject *issue, NSError *error) {
         
-        [self getCurrentIssueNumber];
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
+        if (!error) {
+            // Now let's update it with some new data. In this case, only cheatMode and score
+            // will get sent to the cloud. playerName hasn't changed.
+            issue[CURRENT_ISSUE_NUMBER_KEY] = _currentIssueNumber;
+            [issue saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    [self getCurrentIssueNumber];
+                } else {
+                    NSLog(@"Error: %@", error);
+                }
+            }];
+            
+        } else {
+            NSLog(@"Error: %@", error);
+        }
     }];
-
 }
 
-- (void)updateCurrentIssueNumberLabel:(NSString *)currentIssueNumber {
+- (void)updateCurrentIssueNumberLabel:(NSNumber *)currentIssueNumber
+{
     self.currentIssueNumberLabel.text = [NSString stringWithFormat:@"Current Issue Number: %@", currentIssueNumber];
 }
 
-- (IBAction)addCoverAction:(id)sender {
+- (IBAction)addCoverAction:(id)sender
+{
     NSLog(@"addCoverAction() - self.currentIssueMongoId: %@", self.currentIssueMongoId);
     [self updateCurrentIssueNumber:self.currentIssueMongoId toAddCover:YES];
 }
 
-- (IBAction)removeCoverAction:(id)sender {
+- (IBAction)removeCoverAction:(id)sender
+{
     NSLog(@"removeCoverAction() - self.currentIssueMongoId: %@", self.currentIssueMongoId);
     [self updateCurrentIssueNumber:self.currentIssueMongoId toAddCover:NO];
 }

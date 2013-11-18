@@ -10,9 +10,10 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *currentIssueNumberLabel;
+@property (nonatomic, retain) PFQuery *query;
 @property (nonatomic, retain) NSString *currentIssueMongoId;
-@property (nonatomic, retain) NSString *currentIssueNumber;
+@property (nonatomic, retain) NSNumber *currentIssueNumber;
+@property (weak, nonatomic) IBOutlet UILabel *currentIssueNumberLabel;
 
 - (void)updateCurrentIssueNumber:(NSString *)currentIssueMongoId toAddCover:(BOOL)addCover;
 

@@ -22,8 +22,8 @@
 		960893FE1822E78E0064CF27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960893DD1822E78E0064CF27 /* UIKit.framework */; };
 		960894061822E78E0064CF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960894041822E78E0064CF27 /* InfoPlist.strings */; };
 		960894081822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */; };
-		960F782C1824069F002758CE /* TMCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F782B1824069F002758CE /* TMCClient.m */; };
 		96BA12A11831A3B700DB90B3 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BA12A01831A3B700DB90B3 /* WebViewController.m */; };
+		96C3C3FC183994FE005C3052 /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96C3C3FB183994FE005C3052 /* AppConfig.plist */; };
 		B57D8A7890D847E684639E7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D98124CE244E2EA1818360 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,11 +60,9 @@
 		960894031822E78E0064CF27 /* The Magazine Covers Dot Org UpdaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Magazine Covers Dot Org UpdaterTests-Info.plist"; sourceTree = "<group>"; };
 		960894051822E78E0064CF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		960894071822E78E0064CF27 /* The_Magazine_Covers_Dot_Org_UpdaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Magazine_Covers_Dot_Org_UpdaterTests.m; sourceTree = "<group>"; };
-		960F782A1824069F002758CE /* TMCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCClient.h; sourceTree = "<group>"; };
-		960F782B1824069F002758CE /* TMCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCClient.m; sourceTree = "<group>"; };
-		96AC64A4182C732400EF1620 /* Endpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endpoints.h; sourceTree = "<group>"; };
 		96BA129F1831A3B700DB90B3 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		96BA12A01831A3B700DB90B3 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		96C3C3FB183994FE005C3052 /* AppConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,13 +125,11 @@
 		960893DF1822E78E0064CF27 /* The Magazine Covers Dot Org Updater */ = {
 			isa = PBXGroup;
 			children = (
-				96AC64A4182C732400EF1620 /* Endpoints.h */,
 				960893E81822E78E0064CF27 /* AppDelegate.h */,
 				960893E91822E78E0064CF27 /* AppDelegate.m */,
 				960893EB1822E78E0064CF27 /* Main_iPhone.storyboard */,
 				960893EE1822E78E0064CF27 /* Main_iPad.storyboard */,
-				960F782A1824069F002758CE /* TMCClient.h */,
-				960F782B1824069F002758CE /* TMCClient.m */,
+				96C3C3FB183994FE005C3052 /* AppConfig.plist */,
 				960893F11822E78E0064CF27 /* ViewController.h */,
 				960893F21822E78E0064CF27 /* ViewController.m */,
 				96BA129F1831A3B700DB90B3 /* WebViewController.h */,
@@ -252,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				960893F01822E78E0064CF27 /* Main_iPad.storyboard in Resources */,
+				96C3C3FC183994FE005C3052 /* AppConfig.plist in Resources */,
 				960893F51822E78E0064CF27 /* Images.xcassets in Resources */,
 				960893ED1822E78E0064CF27 /* Main_iPhone.storyboard in Resources */,
 				960893E41822E78E0064CF27 /* InfoPlist.strings in Resources */,
@@ -308,7 +305,6 @@
 			files = (
 				960893F31822E78E0064CF27 /* ViewController.m in Sources */,
 				96BA12A11831A3B700DB90B3 /* WebViewController.m in Sources */,
-				960F782C1824069F002758CE /* TMCClient.m in Sources */,
 				960893EA1822E78E0064CF27 /* AppDelegate.m in Sources */,
 				960893E61822E78E0064CF27 /* main.m in Sources */,
 			);
@@ -452,6 +448,7 @@
 				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
 				INFOPLIST_FILE = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -466,6 +463,7 @@
 				GCC_PREFIX_HEADER = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Prefix.pch";
 				INFOPLIST_FILE = "The Magazine Covers Dot Org Updater/The Magazine Covers Dot Org Updater-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MI5-Lc-MXa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller - the-magazine-covers.org updater-->
@@ -16,16 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Issue#" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="kyt-hm-RXH">
-                                <rect key="frame" x="20" y="138" width="280" height="134"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting current issue number..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="kyt-hm-RXH">
+                                <rect key="frame" x="20" y="87" width="280" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daL-QB-H0z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daL-QB-H0z">
                                 <rect key="frame" x="20" y="280" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Eqw-Y2-nUB"/>
+                                </constraints>
                                 <state key="normal" title="Add cover">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -33,9 +36,12 @@
                                     <action selector="addCoverAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0z9-RV-KEp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVS-pm-bdR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVS-pm-bdR">
                                 <rect key="frame" x="20" y="403" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pef-8g-3Qp"/>
+                                </constraints>
                                 <state key="normal" title="Remove cover">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -43,9 +49,12 @@
                                     <action selector="removeCoverAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Vt-Nj-HAa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntr-Hx-WdH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntr-Hx-WdH">
                                 <rect key="frame" x="20" y="518" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IxB-RF-762"/>
+                                </constraints>
                                 <state key="normal" title="the-magazine-covers.org">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -55,6 +64,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="daL-QB-H0z" firstAttribute="top" secondItem="kyt-hm-RXH" secondAttribute="bottom" constant="8" symbolic="YES" id="4NV-wZ-eTR"/>
+                            <constraint firstItem="ntr-Hx-WdH" firstAttribute="top" secondItem="WVS-pm-bdR" secondAttribute="bottom" constant="85" id="4Q0-D7-8vc"/>
+                            <constraint firstItem="WVS-pm-bdR" firstAttribute="trailing" secondItem="daL-QB-H0z" secondAttribute="trailing" id="87O-5c-KdF"/>
+                            <constraint firstItem="WVS-pm-bdR" firstAttribute="leading" secondItem="ntr-Hx-WdH" secondAttribute="leading" id="9q0-PP-vr7"/>
+                            <constraint firstItem="daL-QB-H0z" firstAttribute="leading" secondItem="WVS-pm-bdR" secondAttribute="leading" id="Gcj-Dq-GCS"/>
+                            <constraint firstItem="kyt-hm-RXH" firstAttribute="top" secondItem="bzY-GF-f9W" secondAttribute="bottom" constant="23" id="IeM-SJ-P3t"/>
+                            <constraint firstItem="WVS-pm-bdR" firstAttribute="top" secondItem="daL-QB-H0z" secondAttribute="bottom" constant="93" id="Kze-e6-oAX"/>
+                            <constraint firstItem="kyt-hm-RXH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Qc4-r6-xZT"/>
+                            <constraint firstItem="ntr-Hx-WdH" firstAttribute="trailing" secondItem="WVS-pm-bdR" secondAttribute="trailing" id="dOB-Ni-ny0"/>
+                            <constraint firstItem="daL-QB-H0z" firstAttribute="leading" secondItem="kyt-hm-RXH" secondAttribute="leading" id="ibF-NZ-4uo"/>
+                            <constraint firstAttribute="trailing" secondItem="kyt-hm-RXH" secondAttribute="trailing" constant="20" symbolic="YES" id="kSp-jS-bO1"/>
+                            <constraint firstItem="daL-QB-H0z" firstAttribute="trailing" secondItem="kyt-hm-RXH" secondAttribute="trailing" id="m6a-pa-oLS"/>
+                            <constraint firstAttribute="bottom" secondItem="ntr-Hx-WdH" secondAttribute="bottom" constant="20" symbolic="YES" id="tiA-GA-L1t"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="the-magazine-covers.org updater" id="fGw-Jx-TJL"/>
                     <connections>

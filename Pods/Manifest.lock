@@ -19,11 +19,20 @@ PODS:
   - AFNetworking/Serialization (2.0.2)
   - AFNetworking/UIKit (2.0.2):
     - AFNetworking/NSURLConnection
+  - Facebook-iOS-SDK (3.9.0)
+  - Parse (1.2.16):
+    - Facebook-iOS-SDK (~> 3.7)
+  - TestFlightSDK (2.1.1-beta)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.2)
+  - Parse (~> 1.2.16)
+  - TestFlightSDK (~> 2.1.1-beta)
 
 SPEC CHECKSUMS:
   AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
+  Facebook-iOS-SDK: 5e1416dbdfc17b2620c2ca31c02e6feec042f2c1
+  Parse: 598f833f44cf3e3e0dc0cee92892786d16ab7325
+  TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
 
-COCOAPODS: 0.26.2
+COCOAPODS: 0.28.0
